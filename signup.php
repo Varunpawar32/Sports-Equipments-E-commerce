@@ -8,7 +8,7 @@ $username_err = $password_err = $confirm_password_err = $email_err = "";
 
 // Processing form data when form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
+    
     // Validate username
     if (empty(trim($_POST["username"]))) {
         $username_err = "Username cannot be blank";
